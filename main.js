@@ -16,7 +16,7 @@ function getPlaylistLength (playlist) {
 
 function getHardestHomework (homeworks) {
     let hardestHomeworkName = '';
-    let score = 101;
+    let score = Infinity;
     for (const homework of homeworks) {
             if(homework.averageScore < score){
                 score = homework.averageScore;
